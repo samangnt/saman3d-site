@@ -2,7 +2,7 @@
 
 [![Website Live](https://img.shields.io/badge/Website-Live-brightgreen.svg)](https://saman3d.com)
 [![Tech Stack](https://img.shields.io/badge/Stack-Vanilla_Web-blue.svg)]()
-[![AI Powered](https://img.shields.io/badge/Powered_by-Claude_3.5-purple.svg)]()
+[![AI Powered](https://img.shields.io/badge/Powered_by-Claude-purple.svg)]()
 
 > **Engineering Visuals. Automating Realities.**
 > Welcome to the official repository for the Saman3D Studio landing page.
