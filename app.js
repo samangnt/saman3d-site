@@ -105,12 +105,14 @@ function openProject(id, trigger = null) {
     $('#media-note').textContent = 'Playing this video connects to YouTube. If the embedded player is unavailable, use “Watch on YouTube”.';
   } else {
     const picture = document.createElement('img');
+    picture.draggable = false;
     $('#project-media').append(picture);
     project.gallery.forEach((source, index) => {
       const button = document.createElement('button');
       button.type = 'button';
       button.setAttribute('aria-label', `View artwork ${index + 1}`);
       const thumb = document.createElement('img');
+      thumb.draggable = false;
       thumb.src = source; thumb.alt = ''; thumb.loading = 'lazy'; thumb.width = 52; thumb.height = 52;
       button.append(thumb);
       button.addEventListener('click', () => { imageIndex = index; renderGallery(); });
@@ -191,3 +193,12 @@ if ('IntersectionObserver' in window) {
   }, {rootMargin:'-15% 0px -65% 0px',threshold:0});
   ['work','game-dev','about','contact'].forEach(id => observer.observe(document.getElementById(id)));
 }
+
+// Discourage casual image saving without interfering with text or keyboard controls.
+const artworkArea = 'img, .project-art, .hero-visual, .game-image, #project-media, .gallery-thumbnails';
+document.addEventListener('dragstart', event => {
+  if (event.target instanceof Element && event.target.closest(artworkArea)) event.preventDefault();
+});
+document.addEventListener('contextmenu', event => {
+  if (event.target instanceof Element && event.target.closest(artworkArea)) event.preventDefault();
+});

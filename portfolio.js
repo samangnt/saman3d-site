@@ -46,21 +46,6 @@ const projects = [
     "href": "https://www.youtube.com/watch?v=Z5QASfBNyoM"
   },
   {
-    "id": "pahadi-gaming",
-    "title": "Pahadi Gaming",
-    "category": "cinematic",
-    "label": "Stream intro & outro · Client work",
-    "video": "kXqQIiM20zA",
-    "description": "A custom 3D intro, outro and break package. The two-minute intro follows a character modelled after the client, driving a Koenigsegg Regera through a game-inspired world to his gaming room.",
-    "roles": [
-      "Character modelling",
-      "3D animation",
-      "Stream package"
-    ],
-    "image": "images/portfolio/kXqQIiM20zA.webp",
-    "href": "https://www.youtube.com/watch?v=kXqQIiM20zA"
-  },
-  {
     "id": "cartoon-characters",
     "title": "Characters with character.",
     "category": "characters",
@@ -197,5 +182,20 @@ const projects = [
       "Dynamic environments"
     ],
     "href": "#game-dev"
+  },
+  {
+    "id": "pahadi-gaming",
+    "title": "Pahadi Gaming",
+    "category": "cinematic",
+    "label": "Stream intro & outro · Client work",
+    "video": "kXqQIiM20zA",
+    "description": "A custom 3D intro, outro and break package. The two-minute intro follows a character modelled after the client, driving a Koenigsegg Regera through a game-inspired world to his gaming room.",
+    "roles": [
+      "Character modelling",
+      "3D animation",
+      "Stream package"
+    ],
+    "image": "images/portfolio/kXqQIiM20zA.webp",
+    "href": "https://www.youtube.com/watch?v=kXqQIiM20zA"
   }
 ];

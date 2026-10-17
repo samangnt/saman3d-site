@@ -1407,3 +1407,27 @@ dialog::backdrop {
 .hero-visual:hover>img {
   transform:scale(1.36)
 }
+
+/* Keep email within reach at the start of the page. */
+.hero-actions {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 12px 26px;
+  justify-content: start;
+}
+.hero-contact {
+  grid-column: 1;
+  width: 100%;
+}
+img {
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+@media (max-width: 480px) {
+  .hero-actions { column-gap: 20px; }
+}
+@media (max-width: 350px) {
+  .hero-actions { grid-template-columns: max-content; }
+  .hero-contact { grid-row: 2; }
+}
