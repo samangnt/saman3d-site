@@ -142,7 +142,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible {
   line-height:1;
   letter-spacing:-1px
 }
-.logo>span:not(.logo-dot) {
+.logo>span {
   color:var(--accent)
 }
 .logo svg {
@@ -153,12 +153,6 @@ button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible {
   stroke:var(--accent);
   stroke-width:1.7;
   stroke-linejoin:round
-}
-.logo-dot {
-  font-size:10px;
-  align-self:flex-start;
-  letter-spacing:0;
-  margin:1px 0 0 4px
 }
 nav {
   display:flex;
@@ -1430,4 +1424,44 @@ img {
 @media (max-width: 350px) {
   .hero-actions { grid-template-columns: max-content; }
   .hero-contact { grid-row: 2; }
+}
+
+.more-work-note {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: clamp(28px, 4vw, 58px);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  min-width: 0;
+}
+.more-work-symbol {
+  color: var(--accent);
+  font-size: 54px;
+  line-height: 1;
+  margin-bottom: 28px;
+}
+.more-work-note .eyebrow { font-size: 9px; }
+.more-work-note h3 {
+  font-size: clamp(32px, 3.5vw, 50px);
+  margin-top: 17px;
+}
+.more-work-description {
+  max-width: 330px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+.more-work-note .text-button {
+  margin-top: 24px;
+  color: var(--accent);
+}
+@media (max-width: 760px) {
+  .more-work-note { padding: 28px; }
+  .more-work-symbol { font-size: 40px; margin-bottom: 22px; }
+  .more-work-note h3 { font-size: 32px; }
+  .more-work-description { font-size: 13px; }
+  .more-work-note .text-button { font-size: 12px; }
 }

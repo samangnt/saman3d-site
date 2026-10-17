@@ -43,6 +43,7 @@ function filterProjects() {
   const visible = cards.filter(card => !card.hidden).length;
   showAll.hidden = !limited || matching.length <= 6;
   $('.empty-state').hidden = matching.length !== 0;
+  $('.more-work-note').hidden = activeFilter !== 'all' || Boolean(query) || limited;
   $('#result-count').textContent = `Showing ${visible} of ${matching.length} matching projects.`;
 }
 $$('[data-filter]').forEach(button => button.addEventListener('click', () => {
