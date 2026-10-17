@@ -7,7 +7,7 @@
 > **Engineering Visuals. Automating Realities.**
 > Welcome to the official repository for the Saman3D Studio landing page.
 
-Saman3D is a next-generation production studio bridging high-fidelity 3D animation, standalone indie games, and interactive Roblox experiences. We leverage advanced AI reasoning models to eliminate bottlenecks, automate heavy DCC workflows, and scale our output without bloating our headcount.
+Saman3D is a next-generation production studio bridging high-fidelity 3D animation, standalone indie games, and interactive Roblox experiences. We leverage advanced AI reasoning models to eliminate bottlenecks, automate heavy DCC workflows, and scale our output.
 
 🌐 **Live Website:** [saman3d.com](https://saman3d.com)
 
