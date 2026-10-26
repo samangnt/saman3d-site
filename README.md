@@ -13,7 +13,7 @@ Saman3D is a next-generation production studio bridging high-fidelity 3D animati
 - Filter 11 projects by short-form, cinematic, cartoon, character modelling or game development, or search by title and project details.
 - Open videos in an accessible project dialog, with credits and a direct YouTube fallback.
 - Browse 31 recovered character images in two galleries using arrows, thumbnails or the keyboard.
-- Explore the Organ Rush development preview, biography and services.
+- Explore the Emergency Route development preview, biography and services.
 - Copy the contact email or share a direct project link such as `https://saman3d.com/#project=chasms-call`.
 - Use the responsive mobile menu, keyboard navigation and reduced-motion support.
 
