@@ -10,7 +10,7 @@ class AmbulanceAudio {
  ignite(){if(this.engineRunning)return;this.engineRunning=true;this.pendingStart=true;this.starting=false;this.unlock();}
  park(){this.engineRunning=false;this.pendingStart=false;this.starting=false;this.stop('engine');this.stop('start');}
  reset(){this.park();this.stop('siren');}
- update(rules){const active=rules.phase==='Active',driver=active&&!rules.onFoot,ear=rules.onFoot?rules.player:rules.car;this.listener.position.set(ear.x,ear.y+5,ear.z);this.listener.quaternion.copy(this.scene.camera.quaternion);this.listener.updateMatrixWorld(true);
+ update(rules){const active=rules.phase==='Active',driver=active&&!rules.onFoot&&rules.transport!=='helicopter',ear=rules.onFoot?rules.player:rules.transport==='helicopter'?rules.heli:rules.car;this.listener.position.set(ear.x,ear.y+5,ear.z);this.listener.quaternion.copy(this.scene.camera.quaternion);this.listener.updateMatrixWorld(true);
   if(!driver&&this.engineRunning)this.park();
   if(!active||rules.paused||this.muted){for(const name of Object.keys(this.nodes))this.stop(name);this.pendingStart=false;this.starting=false;return;}
   if(this.pendingStart){if(this.failed.start)this.pendingStart=false;else if(this.nodes.start.buffer){this.nodes.start.setVolume(.3);if(this.play('start')){this.startCount++;this.starting=true;this.pendingStart=false;}}}

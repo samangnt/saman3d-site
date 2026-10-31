@@ -1,23 +1,50 @@
-# Emergency Route — friend playtest 0.6
+# Emergency Route — single-player playtest 0.7
 
-Play: https://saman3d.com/games/EmergencyRoute/
+Play at https://saman3d.com/games/EmergencyRoute/.
 
-Single-player ambulance game. No account or server is required. This folder is independent of the portfolio homepage and original Roblox place.
+A separate browser conversion with an unlockable helicopter route. The original Roblox place, portfolio homepage and domain configuration are unchanged.
 
-## Phone
+## Play and progress
 
-The left joystick controls movement and driving. Its distance from the centre smoothly changes walking speed, reaching a run at the edge. The large circular up-arrow on the right jumps or exits the ambulance. Camera gestures use two-finger pinch and single-finger drag. The action button handles pickups and repairs. Separate buttons cover jump/exit, braking and organ care. Inventory, tasks, torch, siren and pause are tappable. Landscape gives the clearest view. Performance graphics are selected automatically on touch devices.
+Enter a player name once. Your name, coins and helicopter ownership stay in this browser; the game does not upload them. Complete deliveries to earn coins. The helicopter costs 10,000 coins and stays unlocked. Loading the organ into either vehicle chooses that route and removes the other vehicle.
 
-Touch event handling and portrait/landscape layouts were checked in the desktop browser. Physical Android/iPhone performance remains to be tested by players.
+The accompanying **Emergency-Route-Play.html** contains the game, graphics and audio in one file. Extract the ZIP, then open that HTML file in a desktop browser. No account or Internet connection is needed by the game. The same file is checked through a local HTTP preview; direct file opening and physical phone performance are separate browser environments.
 
-## Desktop
+For the editable folder, run `node serve.cjs` and visit `http://127.0.0.1:4177/`. Use `dist/index.html` as the normal entry point; `dist/qa.html` contains development-only checks.
 
-WASD/arrows, Shift sprint, Space jump/exit, right drag look, wheel zoom. Hold E to interact, R to repair and F for organ care. I inventory, T tasks, B drop, G torch, Q siren, X brake, P/Escape pause.
+## Controls
 
-## Testing
+| Input | Action |
+|---|---|
+| WASD / arrows | Walk, drive or fly / turn |
+| Shift | Run on foot; also ascend in helicopter |
+| Space | Jump / exit ambulance / ascend in helicopter |
+| C / Ctrl | Descend in helicopter |
+| Hold E | Pick up, load, enter, unload, hand over; exit helicopter after landing |
+| Hold R / F | Repair / organ care |
+| I / T / B | Inventory / tasks / drop equipment |
+| G / Q / X | Torch / ambulance siren / brake |
+| Right drag / wheel | Look / zoom |
+| P / Escape / M | Pause / pause / mute |
 
-All 11 configured route events and 53 repair targets are present, with organ care, failure/revive and final unloading/handover. This is a playtest; a full human delivery/search run and wider browser/device testing remain. Some unrecovered clothing/face/vehicle trim textures are reconstructed.
+On phones, drag the left joystick farther to run faster. The large right-side up arrow jumps, exits the ambulance or ascends in the helicopter. Flight has a separate descend control. Hold the contextual action button for pickups and repairs. Drag to look and pinch to zoom. Fullscreen has a quick toggle and an on/off checkbox in settings; it starts automatically after PLAY where supported. Touch devices start in Performance graphics.
 
-## Credits
+## Routes and changes
 
-Original game/map/vehicle/equipment and audio come from the user-provided Roblox place 89752458290049. Original creator credits are retained. Asset rights remain with their respective creators. Three.js is MIT licensed; see assets/THREE-LICENSE.txt.
+Collect the heart, kidney or lungs at Hospital A. The pickup prompt is available from the hospital spawn. Loading starts the viability reserve.
+
+The ambulance route contains ten events: tyre blowout, fallen tree, emergency gate, one early timed rockfall, flood stall, overheating, fuel leak, dead battery, brake failure and damaged bridge. The late rockfall is removed. Repairs retain all 53 physical targets. Equipment has a subtle glow and equips on pickup, including when the torch is on. One heavy item can be carried at a time. Daytime is selected with 75% probability, night with 25%. Running is 1.5 times the previous speed; water no longer returns the player to the ambulance. Distances use meters and speed uses km/h. Music fades away from the lobby. Night lighting is brighter and the HUD is smaller and more transparent.
+
+At Hospital B, drive into the glowing bay. The ambulance stops and locks; exit, collect the organ at the rear and carry it through the doors to reception.
+
+The helicopter uses the original air-ambulance model, animated rotors and source-based flight speeds. Fly through all twelve ordered rings, descend onto the glowing Hospital B helipad and stop. Landing locks the helicopter; exit, collect the organ and walk to reception. Neither vehicle can be driven away after parking or landing for delivery.
+
+Organ care restores 5% viability with a 45-second cooldown. Failed deliveries can revive with 50% viability. A failure after parking preserves the final carry-and-deliver stage.
+
+## Checks and remaining limits
+
+Browser checks cover ten ground events, 53 targets, 24 pickups, care and handover with zero game errors. Physics checks drive the full road and hospital approach, fly all twelve rings, land, and walk the organ into Hospital B from both arrival points. Touch joystick, pinch, jump, helicopter ascent/descent and holding actions are checked in the desktop browser. Actual fullscreen entry/exit, one-time naming and saved progress are checked there too.
+
+Packed meshes retain every recovered LOD0 face and original UVs. The original kidney-container atlas is restored. Helicopter recovery includes 245 mesh assets; nineteen smaller mesh IDs remain unavailable, including some tail lettering, fittings, a lower-tail panel and nose grille. Some clothing and ambulance trim remain reconstructed. The authentic helicopter turbine loop is included; its separate rotor-spin recording remains unavailable.
+
+Physical Android/iPhone/Safari performance and a complete human road/search playthrough remain to be tested. This friend playtest is not CrazyGames certified. See BUILD-MANIFEST.json for exact sizes, CREDITS.md for attribution and CRAZYGAMES-READINESS.md for the submission checklist.

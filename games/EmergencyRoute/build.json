@@ -1,54 +1,93 @@
 {
-  "version": "0.6",
+  "version": "0.7",
   "date": "2026-10-31",
+  "routeEvents": 10,
+  "repairTargets": 53,
+  "helicopterRings": 12,
+  "helicopterPrice": 10000,
+  "verification": {
+    "groundGameplay": "10 events, 53 repair targets, 24 pickups, organ care, unload and staff handover; zero game errors in real browser",
+    "hospitalArrival": "Physical drive across final road segments, parking stop/lock, exit, rear unload and walk through Hospital B doors; zero impacts",
+    "airGameplay": "12 ordered rings crossed with actual flight physics, original Hospital B pad descent/landing lock, exit, unload and physical walk to reception; 98.98 simulated flight seconds",
+    "phoneControls": "Analog walk/run, jump, pinch, helicopter ascent/descent/joystick and hold controls checked in desktop browser; physical devices pending",
+    "profile": "One-time name, local persistence, single tester grant, atomic helicopter purchase and ownership persistence verified",
+    "fullscreen": "Automatic entry from player gesture and on/off toggle verified in browser; checkbox included in settings; browser API support applies",
+    "world": "75/25 independent day/night, autoequip with torch on, metric compass, faster running, water walking, lobby music distance falloff, late rockfall removed",
+    "assetPacking": "All original recovered mesh faces retained; normalized position error below 0.00000763; original UVs retained as Float32",
+    "privacy": "Names and balances are browser-local; no account backend, analytics or uploads; public release files scanned before commit"
+  },
   "url": "https://saman3d.com/games/EmergencyRoute/",
   "singlePlayer": true,
   "playtest": true,
-  "bytes": 42581888,
+  "bytes": 44443164,
   "files": {
     "ambulance-audio.js": {
-      "bytes": 3291,
-      "sha256": "c58bd61a57bb5b970d8a76b8f7911b563cd54a9dd7403a7fa07a36d7b9cfdf2f"
+      "bytes": 3365,
+      "sha256": "4eaf31c54711fa286b57be532444429f929574ceb17d17861f076ccb20a34719"
+    },
+    "CREDITS.md": {
+      "bytes": 3592,
+      "sha256": "e94d41038feaf398cb8e9652941f5ec986c550db300fa93b71c9311cdc65e4e4"
     },
     "game.js": {
-      "bytes": 30094,
-      "sha256": "bed53747d11e4912c8f10f1ab6a57348feb6cb87c334db482473179f8d103c80"
+      "bytes": 36837,
+      "sha256": "02c67ab100175cef09c8188272bf5dd6838f536f87bdc9667a578ba1fcdd6b09"
+    },
+    "helicopter.js": {
+      "bytes": 11370,
+      "sha256": "3980801a92eeba5564b8953cc5290814118c0fe124e1f03425e7f9886c566396"
     },
     "index.html": {
-      "bytes": 6362,
-      "sha256": "c0676d70d100164342fe07470b4c48e0e74a3e9617c18d22e472d829118a58c7"
+      "bytes": 7650,
+      "sha256": "7a2f399c9abe5ec09330530cfe3b03673cfda3ff7d503e3cc04cd84ce4b69f43"
     },
     "preview.png": {
       "bytes": 1747736,
       "sha256": "5927a9089d951a1dd7cce7db9ee82105c2a552e74e6db64d800b9460a4476b58"
     },
     "README.md": {
-      "bytes": 1720,
-      "sha256": "66346b1cdf879444b10953d4751117f324898c15e067faa8c5da337e7ab73fcb"
+      "bytes": 4841,
+      "sha256": "a8c50fdfc18e831dfa288b22da344eb5876e95e05c128e4aad3a5dd10e3f445b"
     },
     "rescue-rules.js": {
-      "bytes": 23479,
-      "sha256": "1aaf61faacdd7482a2a9a495b31fe09465878df1dcce9a444b3b29df26e6d703"
+      "bytes": 28407,
+      "sha256": "a2068e96361adb6c5e01f6c19e8bb3ff8c6909fb173fd722581744d35e221cef"
     },
     "scene.js": {
-      "bytes": 37628,
-      "sha256": "563293c26af7278fd2b9cc050d1aedeb57b02b9eff91f665ec5250d2d72a2217"
+      "bytes": 39698,
+      "sha256": "0d257b3871b433c39cf324592f8ac74ba2e8d7e757a6a23816bbb0234c0d734f"
     },
     "style.css": {
-      "bytes": 16073,
-      "sha256": "16b9405695eeeb1d68de9dd3a70e2f504eb88e1e1702a10aa4ca7771b609b012"
+      "bytes": 20344,
+      "sha256": "1cd087d7d2d7e24b030a058ee96013ce05acf6f485341937a39dea0066950303"
     },
     "touch-controls.js": {
       "bytes": 4622,
       "sha256": "fdbeaeef0b307cb98841ca9d106349bf873510954514f99a7037e455629967a9"
+    },
+    "assets/air-route.js": {
+      "bytes": 116024,
+      "sha256": "3b7b82771edf190b224ee816f09504cb0dddf07c41d518c1b0a818beef0857eb"
     },
     "assets/details.js": {
       "bytes": 1205188,
       "sha256": "da3c7d3749bd68214d55f5066c1b3b354d2c7cd41641c0d6bfbe69658a026c0a"
     },
     "assets/geometry.js": {
-      "bytes": 10930092,
-      "sha256": "c38850a4fc64bc3a96246b35e518a6b4ce3d323ceb9e8d50db2dca44b26f57c0"
+      "bytes": 3063975,
+      "sha256": "8b942e656610b2351214926f27e76b8e5fc89dd52ed6ae483993724e260191f2"
+    },
+    "assets/heli-geometry.js": {
+      "bytes": 7673927,
+      "sha256": "bfb30ef19f3040d161c0a5cfdaf672c09159c22c1fbcd104051f3ceb339d61ba"
+    },
+    "assets/heli-textures.js": {
+      "bytes": 1099220,
+      "sha256": "287079757bd0be764ba2f9ac9ac5d0a4cfe4205e5be3ae397811348da5881cd4"
+    },
+    "assets/organ-textures.js": {
+      "bytes": 90907,
+      "sha256": "56fb82c6a31cf575e9f9c6b805d9e75f8ff098b56242f4bfc303481e29f85712"
     },
     "assets/textures.js": {
       "bytes": 578677,
@@ -81,6 +120,10 @@
     "assets/audio/140101756508377.ogg": {
       "bytes": 1229407,
       "sha256": "5bdb909783166b9ee5ebfc14b3738183b9a14510a3e930919555306618de257f"
+    },
+    "assets/audio/150485913.ogg": {
+      "bytes": 709858,
+      "sha256": "3618b65cfd74ec64da72fab35dbda0ab78d431c3776595c5b043b20459ce1c00"
     },
     "assets/audio/316019951.ogg": {
       "bytes": 145462,
@@ -142,15 +185,5 @@
       "bytes": 39186,
       "sha256": "070bb9aaff4849dbf2244a43b7d8ea731c805ccda6408dd33b2245359923f670"
     }
-  },
-  "verification": {
-    "physicalMissionTargets": 53,
-    "routeEvents": 11,
-    "displayUnits": "meters and km/h",
-    "vehicleAudio": "ignition on driver entry, movement-only engine, spatially attached sources, distance cutoff and reset/pause/mute checks",
-    "touchHoldProtection": "selection/callout suppression with hold actions retained",
-    "touchUnitTests": "passed",
-    "browserTouchActions": "joystick speed, diagonal movement, auto-run, jump, pinch and multi-touch checks; portrait and landscape inspected",
-    "realPhonePerformance": "pending"
   }
 }
