@@ -1,42 +1,42 @@
 {
-  "version": "0.4",
+  "version": "0.5",
   "date": "2026-10-31",
   "url": "https://saman3d.com/games/EmergencyRoute/",
   "singlePlayer": true,
   "playtest": true,
-  "bytes": 42575185,
+  "bytes": 42577427,
   "files": {
     "game.js": {
-      "bytes": 29557,
-      "sha256": "0c8db9ee406fc797c9f6a7b69a350938bd63ff53d9db645db107aa9125fbbe72"
+      "bytes": 29854,
+      "sha256": "646b4ae72e3f0bd423a6a5d34efef0c8fd724d2eeec80b05da903045b4a21fed"
     },
     "index.html": {
-      "bytes": 6603,
-      "sha256": "db16dc9b95eb7cb1be33fd24eb37aa9984624cc837a8eaacbb54f4f20d51463c"
+      "bytes": 6304,
+      "sha256": "7593e406f9eb331bc89fab6b77510c0a87679ddc29ce723d0a7556eefe1e1c19"
     },
     "preview.png": {
       "bytes": 1747736,
       "sha256": "5927a9089d951a1dd7cce7db9ee82105c2a552e74e6db64d800b9460a4476b58"
     },
     "README.md": {
-      "bytes": 1579,
-      "sha256": "7c0011154bcc08e37d472370bfea20aa1cafb8a15a5ccda69791b094933774c8"
+      "bytes": 1720,
+      "sha256": "102b2aeb5a14057d0490154aa07ec341bb7b755634d30c0d15510b7f2099e29c"
     },
     "rescue-rules.js": {
-      "bytes": 23049,
-      "sha256": "e364a4e6001c00a2ef9b4e8a978882e9bde120419409a1edcfa0426aa252e687"
+      "bytes": 23489,
+      "sha256": "ed65f901a9226a11b6a0be5b00849a8a319b4c23ca297ae22ef2811455668669"
     },
     "scene.js": {
       "bytes": 37429,
       "sha256": "52e5e15c7dad139f7f1ef4b2884aea57938e20a06ecd0ee8cc10acc933cd4fde"
     },
     "style.css": {
-      "bytes": 15517,
-      "sha256": "5743113d2d9f5a60d2dc17d88a9b30e4f2c5ab946002c3865929066380ccf1d3"
+      "bytes": 15904,
+      "sha256": "55aff77eec868af86cb7d58160ca3df4875dff433059391a54a7413e8576944d"
     },
     "touch-controls.js": {
-      "bytes": 2832,
-      "sha256": "deb4c77b72ce69111c62fe110816beaa2fb1fd98e69ab6fab9293f68f7ae7237"
+      "bytes": 4108,
+      "sha256": "e529bf4887c54f1c2877a28d1f26802ad5ba2f98043360dd2cc8556e15fe109f"
     },
     "assets/details.js": {
       "bytes": 1205188,
@@ -143,7 +143,7 @@
     "physicalMissionTargets": 53,
     "routeEvents": 11,
     "touchUnitTests": "passed",
-    "browserTouchActions": "passed: walking/look, collection, acceleration/steering, brake, exit and care; portrait and landscape layouts inspected",
+    "browserTouchActions": "joystick speed, diagonal movement, auto-run, jump, pinch and multi-touch checks; portrait and landscape inspected",
     "realPhonePerformance": "pending"
   }
 }

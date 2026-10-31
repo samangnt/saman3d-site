@@ -1,4 +1,4 @@
-# Emergency Route — friend playtest 0.4
+# Emergency Route — friend playtest 0.5
 
 Play: https://saman3d.com/games/EmergencyRoute/
 
@@ -6,7 +6,7 @@ Single-player ambulance game. No account or server is required. This folder is i
 
 ## Phone
 
-Hold the arrows to move, or accelerate/reverse/steer while driving. Drag the game view to look. Pinch or use +/− to zoom. The action button handles pickups and repairs. Separate buttons cover jump/exit, braking and organ care. Inventory, tasks, run, torch, siren and pause are tappable. Landscape gives the clearest view. Performance graphics are selected automatically on touch devices.
+The left joystick controls movement and driving. Its distance from the centre smoothly changes walking speed, reaching a run at the edge. The large circular up-arrow on the right jumps or exits the ambulance. Camera gestures use two-finger pinch and single-finger drag. The action button handles pickups and repairs. Separate buttons cover jump/exit, braking and organ care. Inventory, tasks, torch, siren and pause are tappable. Landscape gives the clearest view. Performance graphics are selected automatically on touch devices.
 
 Touch event handling and portrait/landscape layouts were checked in the desktop browser. Physical Android/iPhone performance remains to be tested by players.
 
