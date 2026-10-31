@@ -1,0 +1,149 @@
+{
+  "version": "0.4",
+  "date": "2026-10-31",
+  "url": "https://saman3d.com/games/EmergencyRoute/",
+  "singlePlayer": true,
+  "playtest": true,
+  "bytes": 42575185,
+  "files": {
+    "game.js": {
+      "bytes": 29557,
+      "sha256": "0c8db9ee406fc797c9f6a7b69a350938bd63ff53d9db645db107aa9125fbbe72"
+    },
+    "index.html": {
+      "bytes": 6603,
+      "sha256": "db16dc9b95eb7cb1be33fd24eb37aa9984624cc837a8eaacbb54f4f20d51463c"
+    },
+    "preview.png": {
+      "bytes": 1747736,
+      "sha256": "5927a9089d951a1dd7cce7db9ee82105c2a552e74e6db64d800b9460a4476b58"
+    },
+    "README.md": {
+      "bytes": 1579,
+      "sha256": "7c0011154bcc08e37d472370bfea20aa1cafb8a15a5ccda69791b094933774c8"
+    },
+    "rescue-rules.js": {
+      "bytes": 23049,
+      "sha256": "e364a4e6001c00a2ef9b4e8a978882e9bde120419409a1edcfa0426aa252e687"
+    },
+    "scene.js": {
+      "bytes": 37429,
+      "sha256": "52e5e15c7dad139f7f1ef4b2884aea57938e20a06ecd0ee8cc10acc933cd4fde"
+    },
+    "style.css": {
+      "bytes": 15517,
+      "sha256": "5743113d2d9f5a60d2dc17d88a9b30e4f2c5ab946002c3865929066380ccf1d3"
+    },
+    "touch-controls.js": {
+      "bytes": 2832,
+      "sha256": "deb4c77b72ce69111c62fe110816beaa2fb1fd98e69ab6fab9293f68f7ae7237"
+    },
+    "assets/details.js": {
+      "bytes": 1205188,
+      "sha256": "da3c7d3749bd68214d55f5066c1b3b354d2c7cd41641c0d6bfbe69658a026c0a"
+    },
+    "assets/geometry.js": {
+      "bytes": 10930092,
+      "sha256": "c38850a4fc64bc3a96246b35e518a6b4ce3d323ceb9e8d50db2dca44b26f57c0"
+    },
+    "assets/textures.js": {
+      "bytes": 578677,
+      "sha256": "0f0740980fe5b597e58a157b0f8312107198cb8aff2d4a2106b87332abdadd90"
+    },
+    "assets/THREE-LICENSE.txt": {
+      "bytes": 1081,
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    "assets/three.js": {
+      "bytes": 1314688,
+      "sha256": "c5d614ea48685a747f296a89ebf92d27d1edf5f2780f36eb62268afa850406eb"
+    },
+    "assets/world.js": {
+      "bytes": 6333565,
+      "sha256": "8f2a380b55ba7bfc2ff681416f4696f09f06858b2ed31f9d570c24f7072aef04"
+    },
+    "assets/audio/1235894410.ogg": {
+      "bytes": 23384,
+      "sha256": "1ad5e4362f790d20eb9ab8a57ece93f0c2f01cbe619d1b571c78cef3859e8924"
+    },
+    "assets/audio/136977425799420.ogg": {
+      "bytes": 1302920,
+      "sha256": "cf2ff73d40d79478e27a10c5054588d36400d21cf5ec435e65554929069371a8"
+    },
+    "assets/audio/138671229087544.ogg": {
+      "bytes": 1397105,
+      "sha256": "f3184eebe3942d20a7783c46335c94b198d92ed532f92d649f5023760ee0b1ef"
+    },
+    "assets/audio/140101756508377.ogg": {
+      "bytes": 1229407,
+      "sha256": "5bdb909783166b9ee5ebfc14b3738183b9a14510a3e930919555306618de257f"
+    },
+    "assets/audio/316019951.ogg": {
+      "bytes": 145462,
+      "sha256": "4d33dd563eddd20d852c89a8604c53aff74b5bbe68964595ef40a799cbac2e4b"
+    },
+    "assets/audio/551546110.ogg": {
+      "bytes": 995221,
+      "sha256": "962c5511c612227ee7d91a844bfaebfa7df80bb853bce09f989cc0e5fee14eb7"
+    },
+    "assets/audio/906447701.ogg": {
+      "bytes": 85189,
+      "sha256": "6cde1c69b439b1a60e5f2237373ffa1838dca739ef0a346999c138935ff27116"
+    },
+    "assets/audio/9073703112.ogg": {
+      "bytes": 584128,
+      "sha256": "26eeec0b3614156f39ee99f3fa3583e187a0714e8adbfa4e3ead758d6ab8fe8c"
+    },
+    "assets/audio/9112784190.ogg": {
+      "bytes": 1872623,
+      "sha256": "1e0baccb364f623c98e245c27607685a32f15371eb8d939ca713c07bd7a86961"
+    },
+    "assets/audio/9112835056.ogg": {
+      "bytes": 2457041,
+      "sha256": "3d7d9067bd8bb5c828b4242f65f281e26ba66a51d371655945600ac1661f36ab"
+    },
+    "assets/audio/9112835068.ogg": {
+      "bytes": 3435211,
+      "sha256": "9249d4a5f7abc27bc25399673ca5fc53fb53d3167979669aedfbf6912b9c4f14"
+    },
+    "assets/audio/9112854469.ogg": {
+      "bytes": 3399813,
+      "sha256": "00e354ef17ad2c1121a14a038a9e64b9c3b79bfcce89a8becffb36c799ea0736"
+    },
+    "assets/audio/9114492901.ogg": {
+      "bytes": 2592121,
+      "sha256": "0ec2ae25b3cc6500b7ff74bc9c4564f10ab85808ff6ef84c3eaf00d1655173ae"
+    },
+    "assets/audio/9117143192.ogg": {
+      "bytes": 725660,
+      "sha256": "7ce98435d254e86efd0435b85a1a7fd0a9e942741075f5d62681428089873c1d"
+    },
+    "assets/audio/action_footsteps_plastic.mp3": {
+      "bytes": 40858,
+      "sha256": "1ea59522e6b32f2915d9ea9feb0063de0c72e7d0ad686c7bb708bd84ae9858c2"
+    },
+    "assets/audio/action_get_up.mp3": {
+      "bytes": 10347,
+      "sha256": "f9b2d0899932c29888dd1df37caea930102e4aeeb97da51ef85b866d76609c61"
+    },
+    "assets/audio/action_jump.mp3": {
+      "bytes": 6585,
+      "sha256": "0962d7ee2ad7c59ff101f9bac1419202f7bc46ff4aaebd43ef522a06db9d9a3d"
+    },
+    "assets/audio/action_jump_land.mp3": {
+      "bytes": 5331,
+      "sha256": "39fa42eedf3e2e15fc009f98a0c6a7077327dc927b896913832fddf640f81b5e"
+    },
+    "assets/audio/impact_water.mp3": {
+      "bytes": 39186,
+      "sha256": "070bb9aaff4849dbf2244a43b7d8ea731c805ccda6408dd33b2245359923f670"
+    }
+  },
+  "verification": {
+    "physicalMissionTargets": 53,
+    "routeEvents": 11,
+    "touchUnitTests": "passed",
+    "browserTouchActions": "passed: walking/look, collection, acceleration/steering, brake, exit and care; portrait and landscape layouts inspected",
+    "realPhonePerformance": "pending"
+  }
+}
