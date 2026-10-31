@@ -1,34 +1,34 @@
 {
-  "version": "0.5",
+  "version": "0.5.1",
   "date": "2026-10-31",
   "url": "https://saman3d.com/games/EmergencyRoute/",
   "singlePlayer": true,
   "playtest": true,
-  "bytes": 42577427,
+  "bytes": 42577589,
   "files": {
     "game.js": {
-      "bytes": 29854,
-      "sha256": "646b4ae72e3f0bd423a6a5d34efef0c8fd724d2eeec80b05da903045b4a21fed"
+      "bytes": 29859,
+      "sha256": "b404ce80b8600008907823d58475fce8b233e4d72d666f536ef85affe8456edd"
     },
     "index.html": {
-      "bytes": 6304,
-      "sha256": "7593e406f9eb331bc89fab6b77510c0a87679ddc29ce723d0a7556eefe1e1c19"
+      "bytes": 6334,
+      "sha256": "515e2abe3bb25a210ea9df82e45154cfbcc2df39d90a95a9d67de91abf20d769"
     },
     "preview.png": {
       "bytes": 1747736,
       "sha256": "5927a9089d951a1dd7cce7db9ee82105c2a552e74e6db64d800b9460a4476b58"
     },
     "README.md": {
-      "bytes": 1720,
-      "sha256": "102b2aeb5a14057d0490154aa07ec341bb7b755634d30c0d15510b7f2099e29c"
+      "bytes": 1722,
+      "sha256": "4102b3ea67028da7aa0bb352f3a5e9df75c38cab8b9e1a41b490bdfbe268e33e"
     },
     "rescue-rules.js": {
       "bytes": 23489,
       "sha256": "ed65f901a9226a11b6a0be5b00849a8a319b4c23ca297ae22ef2811455668669"
     },
     "scene.js": {
-      "bytes": 37429,
-      "sha256": "52e5e15c7dad139f7f1ef4b2884aea57938e20a06ecd0ee8cc10acc933cd4fde"
+      "bytes": 37554,
+      "sha256": "d98653a5843af233c984d5bca7d242c57b6314d26ec9d9dee56fdadfe838e682"
     },
     "style.css": {
       "bytes": 15904,
