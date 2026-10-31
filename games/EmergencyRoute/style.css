@@ -4,6 +4,7 @@
 
 /* Phone controls leave the centre free for the road and repair work. */
 #game{height:100dvh}.pressed{background:#b87524!important;border-color:#ffd081!important}button{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+#game,#game *{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}#game img{-webkit-user-drag:none}#prompt,#prompt *,#touch,#touch *{touch-action:none}
 .touch-ui #touch{display:flex;position:absolute;left:max(10px,env(safe-area-inset-left));right:max(10px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom));justify-content:space-between;align-items:flex-end;pointer-events:none}
 .touch-ui #touch button{pointer-events:auto;min-width:46px;min-height:46px;padding:8px;background:#152b3ce8;font-size:12px;touch-action:none}
 .touch-ui .touch-actions{display:grid;grid-template-columns:repeat(2,78px);gap:5px}.touch-ui #touch-act{grid-column:1/-1;min-height:48px;background:#365c42ed}

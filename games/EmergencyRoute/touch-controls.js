@@ -3,10 +3,13 @@
 class RescueTouchControls {
  constructor(canvas,keys,handlers){this.canvas=canvas;this.keys=keys;this.handlers=handlers;this.holds=new Map();this.looks=new Map();this.stick=document.getElementById('joystick');this.knob=document.getElementById('joystick-knob');this.stickId=null;this.movement={x:0,y:0,strength:0};
   const capture=(element,e)=>{try{element.setPointerCapture(e.pointerId);}catch{}};
-  const bind=(element,keyFor)=>{element.addEventListener('pointerdown',e=>{if(e.button!==0)return;e.preventDefault();const key=keyFor(e);if(!key)return;capture(element,e);if(key==='Space'&&handlers.canExit()){handlers.exit();return;}this.release(e.pointerId);this.holds.set(e.pointerId,{key,element});keys.add(key);element.classList.add('pressed');});element.addEventListener('lostpointercapture',e=>this.release(e.pointerId));};
+  const protect=element=>{for(const type of ['contextmenu','selectstart','dragstart'])element.addEventListener(type,e=>e.preventDefault());element.addEventListener('touchstart',e=>e.preventDefault(),{passive:false});};
+  const game=document.getElementById('game');for(const type of ['contextmenu','selectstart','dragstart'])game.addEventListener(type,e=>{if(!e.target.closest?.('input,select,option,textarea,[contenteditable="true"]'))e.preventDefault();});
+  const bind=(element,keyFor)=>{protect(element);element.addEventListener('pointerdown',e=>{if(e.button!==0)return;e.preventDefault();const key=keyFor(e);if(!key)return;capture(element,e);if(key==='Space'&&handlers.canExit()){handlers.exit();return;}this.release(e.pointerId);this.holds.set(e.pointerId,{key,element});keys.add(key);element.classList.add('pressed');});element.addEventListener('lostpointercapture',e=>this.release(e.pointerId));};
   document.querySelectorAll('[data-key]').forEach(b=>bind(b,()=>b.dataset.key));
   bind(document.getElementById('touch-act'),()=>handlers.action()?.key);
   bind(document.getElementById('prompt'),e=>e.pointerType==='touch'?handlers.action()?.key:null);
+  protect(this.stick);protect(canvas);
   this.stick.addEventListener('pointerdown',e=>{if(e.button!==0||this.stickId!==null)return;e.preventDefault();this.stickId=e.pointerId;capture(this.stick,e);this.moveStick(e);});
   this.stick.addEventListener('pointermove',e=>{if(e.pointerId!==this.stickId)return;e.preventDefault();this.moveStick(e);});
   this.stick.addEventListener('lostpointercapture',e=>this.release(e.pointerId));

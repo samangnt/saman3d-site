@@ -1,42 +1,46 @@
 {
-  "version": "0.5.1",
+  "version": "0.6",
   "date": "2026-10-31",
   "url": "https://saman3d.com/games/EmergencyRoute/",
   "singlePlayer": true,
   "playtest": true,
-  "bytes": 42577589,
+  "bytes": 42581888,
   "files": {
+    "ambulance-audio.js": {
+      "bytes": 3291,
+      "sha256": "c58bd61a57bb5b970d8a76b8f7911b563cd54a9dd7403a7fa07a36d7b9cfdf2f"
+    },
     "game.js": {
-      "bytes": 29859,
-      "sha256": "b404ce80b8600008907823d58475fce8b233e4d72d666f536ef85affe8456edd"
+      "bytes": 30094,
+      "sha256": "bed53747d11e4912c8f10f1ab6a57348feb6cb87c334db482473179f8d103c80"
     },
     "index.html": {
-      "bytes": 6334,
-      "sha256": "515e2abe3bb25a210ea9df82e45154cfbcc2df39d90a95a9d67de91abf20d769"
+      "bytes": 6362,
+      "sha256": "c0676d70d100164342fe07470b4c48e0e74a3e9617c18d22e472d829118a58c7"
     },
     "preview.png": {
       "bytes": 1747736,
       "sha256": "5927a9089d951a1dd7cce7db9ee82105c2a552e74e6db64d800b9460a4476b58"
     },
     "README.md": {
-      "bytes": 1722,
-      "sha256": "4102b3ea67028da7aa0bb352f3a5e9df75c38cab8b9e1a41b490bdfbe268e33e"
+      "bytes": 1720,
+      "sha256": "66346b1cdf879444b10953d4751117f324898c15e067faa8c5da337e7ab73fcb"
     },
     "rescue-rules.js": {
-      "bytes": 23489,
-      "sha256": "ed65f901a9226a11b6a0be5b00849a8a319b4c23ca297ae22ef2811455668669"
+      "bytes": 23479,
+      "sha256": "1aaf61faacdd7482a2a9a495b31fe09465878df1dcce9a444b3b29df26e6d703"
     },
     "scene.js": {
-      "bytes": 37554,
-      "sha256": "d98653a5843af233c984d5bca7d242c57b6314d26ec9d9dee56fdadfe838e682"
+      "bytes": 37628,
+      "sha256": "563293c26af7278fd2b9cc050d1aedeb57b02b9eff91f665ec5250d2d72a2217"
     },
     "style.css": {
-      "bytes": 15904,
-      "sha256": "55aff77eec868af86cb7d58160ca3df4875dff433059391a54a7413e8576944d"
+      "bytes": 16073,
+      "sha256": "16b9405695eeeb1d68de9dd3a70e2f504eb88e1e1702a10aa4ca7771b609b012"
     },
     "touch-controls.js": {
-      "bytes": 4108,
-      "sha256": "e529bf4887c54f1c2877a28d1f26802ad5ba2f98043360dd2cc8556e15fe109f"
+      "bytes": 4622,
+      "sha256": "fdbeaeef0b307cb98841ca9d106349bf873510954514f99a7037e455629967a9"
     },
     "assets/details.js": {
       "bytes": 1205188,
@@ -142,6 +146,9 @@
   "verification": {
     "physicalMissionTargets": 53,
     "routeEvents": 11,
+    "displayUnits": "meters and km/h",
+    "vehicleAudio": "ignition on driver entry, movement-only engine, spatially attached sources, distance cutoff and reset/pause/mute checks",
+    "touchHoldProtection": "selection/callout suppression with hold actions retained",
     "touchUnitTests": "passed",
     "browserTouchActions": "joystick speed, diagonal movement, auto-run, jump, pinch and multi-touch checks; portrait and landscape inspected",
     "realPhonePerformance": "pending"
