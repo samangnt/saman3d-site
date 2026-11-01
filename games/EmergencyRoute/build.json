@@ -1,5 +1,5 @@
 {
-  "version": "0.8",
+  "version": "0.9",
   "date": "2026-11-01",
   "routeEvents": 10,
   "repairTargets": 53,
@@ -18,15 +18,22 @@
     "helipad": "Physical approach from surrounding terrain over access ramps at both hospitals; solid circular sides and exact surface height",
     "audio": "Original source rotor-spin and turbine loops; loading/menu soundtrack and immediate silence outside lobby; helicopter position used for listener distance",
     "ambulance": "Correct original left/right cab mesh pair with source transforms, UVs and normals",
-    "keyboard": "C-only descent; modifier combinations ignored by gameplay; optional fullscreen keyboard capture with denial/unsupported fallback"
+    "keyboard": "C-only descent; modifier combinations ignored by gameplay; optional fullscreen keyboard capture with denial/unsupported fallback",
+    "vehicleAudio": "Native engine output measured while moving and after AudioContext interruption; driver-state recovery, immediate movement loop and completed-tap resume; zero engine signal at rest/exit",
+    "refreshRates": "Identical physical driving and viability results at 30/60/120/144/165 Hz",
+    "crazyGames": "Current requirements reviewed; Basic Launch candidate with device/portal/artwork checks pending; Full Launch integration and mobile-homepage size target not complete"
   },
   "url": "https://saman3d.com/games/EmergencyRoute/",
   "singlePlayer": true,
-  "bytes": 44494185,
+  "bytes": 44501224,
   "files": {
     "ambulance-audio.js": {
-      "bytes": 3365,
-      "sha256": "4eaf31c54711fa286b57be532444429f929574ceb17d17861f076ccb20a34719"
+      "bytes": 3942,
+      "sha256": "3fdbfd7c8d490c0b22b20854ac55d4d158a1f00a82b9e1a73e21d60a1469b4a0"
+    },
+    "CRAZYGAMES-READINESS.md": {
+      "bytes": 6334,
+      "sha256": "ddd90989295a2ddea31b0683548ff3eda1675600b42a7af7bf12212d362ce314"
     },
     "CREDITS.md": {
       "bytes": 3581,
@@ -37,8 +44,8 @@
       "sha256": "b04bcee581a2cd07b80790fff0c7970232fe1970ad3deb8857827582f6d7ace9"
     },
     "game.js": {
-      "bytes": 37035,
-      "sha256": "c4c58b1e2c3117267b4fa34a7f30e31b91a78fc1a6d9d92c705aab514fa50c30"
+      "bytes": 37039,
+      "sha256": "f9f42fe80ba29dbdf754c2c4536f8735749506549cf96168a0c541efedea9257"
     },
     "helicopter.js": {
       "bytes": 14149,
@@ -46,7 +53,7 @@
     },
     "index.html": {
       "bytes": 7716,
-      "sha256": "13134b4bad8e259b808838e07bc71b4f19a60fe67eb15d07ffc1c379b8d1aa4c"
+      "sha256": "7d31f479addca48f09e2e863e10d5445b0d1056a82d1a50fefc1df2a8b14297c"
     },
     "loading-audio.js": {
       "bytes": 2135,
@@ -57,8 +64,8 @@
       "sha256": "5927a9089d951a1dd7cce7db9ee82105c2a552e74e6db64d800b9460a4476b58"
     },
     "README.md": {
-      "bytes": 5107,
-      "sha256": "8d4623ca11bae033267a8a04499f1a164a2fbf77b39b1731696624d13d4df5a4"
+      "bytes": 5231,
+      "sha256": "1455730835951cbeb5b0baf57115112bbf6e544a4cf47da9aa4daa5c973f63e4"
     },
     "rescue-rules.js": {
       "bytes": 28448,
@@ -70,7 +77,7 @@
     },
     "style.css": {
       "bytes": 20344,
-      "sha256": "1cd087d7d2d7e24b030a058ee96013ce05acf6f485341937a39dea0066950303"
+      "sha256": "29d02b4944c0e90c34d719890c812c65c597687d079c37a6c5e615b889cafa84"
     },
     "touch-controls.js": {
       "bytes": 4622,

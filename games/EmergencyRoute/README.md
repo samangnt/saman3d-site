@@ -1,4 +1,4 @@
-# Emergency Route — single player 0.8
+# Emergency Route — single player 0.9
 
 Play at https://saman3d.com/games/EmergencyRoute/.
 
@@ -33,7 +33,7 @@ On phones, drag the left joystick farther to run faster. The large right-side up
 
 Collect the heart, kidney or lungs at Hospital A. The pickup prompt is available from the hospital spawn. Loading starts the viability reserve.
 
-The ambulance route contains ten events: tyre blowout, fallen tree, emergency gate, one early timed rockfall, flood stall, overheating, fuel leak, dead battery, brake failure and damaged bridge. The late rockfall is removed. Repairs retain all 53 physical targets. Equipment has a subtle glow and equips on pickup, including when the torch is on. One heavy item can be carried at a time. Daytime is selected with 75% probability, night with 25%. Running is 1.5 times the previous speed; water no longer returns the player to the ambulance. Distances use meters and speed uses km/h. Music plays during loading/menu after browser audio permission and fades to silence outside the lobby. Night lighting is brighter and the HUD is smaller and more transparent.
+The ambulance route contains ten events: tyre blowout, fallen tree, emergency gate, one early timed rockfall, flood stall, overheating, fuel leak, dead battery, brake failure and damaged bridge. The late rockfall is removed. Repairs retain all 53 physical targets. Equipment has a subtle glow and equips on pickup, including when the torch is on. One heavy item can be carried at a time. Daytime is selected with 75% probability, night with 25%. Running is 1.5 times the previous speed; water no longer returns the player to the ambulance. Distances use meters and speed uses km/h. Driving audio now recovers from lost driver state and mobile interruptions; the loop responds as soon as the vehicle moves. Music plays during loading/menu after browser audio permission and fades to silence outside the lobby. Night lighting is brighter and the HUD is smaller and more transparent.
 
 At Hospital B, drive into the glowing bay. The ambulance stops and locks; exit, collect the organ at the rear and carry it through the doors to reception.
 
