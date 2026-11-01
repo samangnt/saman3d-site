@@ -1,6 +1,6 @@
 {
-  "version": "0.7",
-  "date": "2026-10-31",
+  "version": "0.8",
+  "date": "2026-11-01",
   "routeEvents": 10,
   "repairTargets": 53,
   "helicopterRings": 12,
@@ -14,48 +14,59 @@
     "fullscreen": "Automatic entry from player gesture and on/off toggle verified in browser; checkbox included in settings; browser API support applies",
     "world": "75/25 independent day/night, autoequip with torch on, metric compass, faster running, water walking, lobby music distance falloff, late rockfall removed",
     "assetPacking": "All original recovered mesh faces retained; normalized position error below 0.00000763; original UVs retained as Float32",
-    "privacy": "Names and balances are browser-local; no account backend, analytics or uploads; public release files scanned before commit"
+    "privacy": "Names and balances are browser-local; no account backend, analytics or uploads; public release files scanned before commit",
+    "helipad": "Physical approach from surrounding terrain over access ramps at both hospitals; solid circular sides and exact surface height",
+    "audio": "Original source rotor-spin and turbine loops; loading/menu soundtrack and immediate silence outside lobby; helicopter position used for listener distance",
+    "ambulance": "Correct original left/right cab mesh pair with source transforms, UVs and normals",
+    "keyboard": "C-only descent; modifier combinations ignored by gameplay; optional fullscreen keyboard capture with denial/unsupported fallback"
   },
   "url": "https://saman3d.com/games/EmergencyRoute/",
   "singlePlayer": true,
-  "playtest": true,
-  "bytes": 44443164,
+  "bytes": 44494185,
   "files": {
     "ambulance-audio.js": {
       "bytes": 3365,
       "sha256": "4eaf31c54711fa286b57be532444429f929574ceb17d17861f076ccb20a34719"
     },
     "CREDITS.md": {
-      "bytes": 3592,
-      "sha256": "e94d41038feaf398cb8e9652941f5ec986c550db300fa93b71c9311cdc65e4e4"
+      "bytes": 3581,
+      "sha256": "f22eef81255991c96a2ac8c5509f244dbf67d5d9654043eb77bc71cb80e1750f"
+    },
+    "game-input.js": {
+      "bytes": 1503,
+      "sha256": "b04bcee581a2cd07b80790fff0c7970232fe1970ad3deb8857827582f6d7ace9"
     },
     "game.js": {
-      "bytes": 36837,
-      "sha256": "02c67ab100175cef09c8188272bf5dd6838f536f87bdc9667a578ba1fcdd6b09"
+      "bytes": 37035,
+      "sha256": "c4c58b1e2c3117267b4fa34a7f30e31b91a78fc1a6d9d92c705aab514fa50c30"
     },
     "helicopter.js": {
-      "bytes": 11370,
-      "sha256": "3980801a92eeba5564b8953cc5290814118c0fe124e1f03425e7f9886c566396"
+      "bytes": 14149,
+      "sha256": "087d5e4a7efb2a464cbe14d07f45f0b2a13884ac14efb666a6a5ddbd42a65085"
     },
     "index.html": {
-      "bytes": 7650,
-      "sha256": "7a2f399c9abe5ec09330530cfe3b03673cfda3ff7d503e3cc04cd84ce4b69f43"
+      "bytes": 7716,
+      "sha256": "13134b4bad8e259b808838e07bc71b4f19a60fe67eb15d07ffc1c379b8d1aa4c"
+    },
+    "loading-audio.js": {
+      "bytes": 2135,
+      "sha256": "160d0cc72ec15f748506583a5580b1e839888c1c44d2f669e98326858b8d3ef0"
     },
     "preview.png": {
       "bytes": 1747736,
       "sha256": "5927a9089d951a1dd7cce7db9ee82105c2a552e74e6db64d800b9460a4476b58"
     },
     "README.md": {
-      "bytes": 4841,
-      "sha256": "a8c50fdfc18e831dfa288b22da344eb5876e95e05c128e4aad3a5dd10e3f445b"
+      "bytes": 5107,
+      "sha256": "8d4623ca11bae033267a8a04499f1a164a2fbf77b39b1731696624d13d4df5a4"
     },
     "rescue-rules.js": {
-      "bytes": 28407,
-      "sha256": "a2068e96361adb6c5e01f6c19e8bb3ff8c6909fb173fd722581744d35e221cef"
+      "bytes": 28448,
+      "sha256": "2513dee8f2148bc97de80b9405c34d55d4541a194073d64e2cdbf696875f8fc1"
     },
     "scene.js": {
-      "bytes": 39698,
-      "sha256": "0d257b3871b433c39cf324592f8ac74ba2e8d7e757a6a23816bbb0234c0d734f"
+      "bytes": 40195,
+      "sha256": "b3f4d8447b33da11d33b7150182f15bcce4bc9c37629356ce7ab5d352d2e3629"
     },
     "style.css": {
       "bytes": 20344,
@@ -74,8 +85,8 @@
       "sha256": "da3c7d3749bd68214d55f5066c1b3b354d2c7cd41641c0d6bfbe69658a026c0a"
     },
     "assets/geometry.js": {
-      "bytes": 3063975,
-      "sha256": "8b942e656610b2351214926f27e76b8e5fc89dd52ed6ae483993724e260191f2"
+      "bytes": 3063794,
+      "sha256": "f193e60cf190486f51e50e9f2493600ddefc78132c9775981d0ab318e63ad89a"
     },
     "assets/heli-geometry.js": {
       "bytes": 7673927,
@@ -132,6 +143,10 @@
     "assets/audio/551546110.ogg": {
       "bytes": 995221,
       "sha256": "962c5511c612227ee7d91a844bfaebfa7df80bb853bce09f989cc0e5fee14eb7"
+    },
+    "assets/audio/7121392909.ogg": {
+      "bytes": 43728,
+      "sha256": "bc103b779ee38312002da5990006a6320e5e6d770052a3e04f3f91681064d6ba"
     },
     "assets/audio/906447701.ogg": {
       "bytes": 85189,

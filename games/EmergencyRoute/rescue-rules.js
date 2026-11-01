@@ -75,6 +75,6 @@ class RescueRules{
  }
  carLocal(x,z){const c=this.car,dx=x-c.x,dz=z-c.z;return{x:Math.cos(c.yaw)*dx-Math.sin(c.yaw)*dz,z:Math.sin(c.yaw)*dx+Math.cos(c.yaw)*dz};}
 }
-root.RescueGuidance={compassAngle(dx,dz,yaw){return Math.atan2(dx*Math.cos(yaw)-dz*Math.sin(yaw),-dx*Math.sin(yaw)-dz*Math.cos(yaw));},lobbyMusicGain(distance){const t=clamp((distance-35)/385,0,1);return .6*(1-t*t*(3-2*t));}};
+root.RescueGuidance={compassAngle(dx,dz,yaw){return Math.atan2(dx*Math.cos(yaw)-dz*Math.sin(yaw),-dx*Math.sin(yaw)-dz*Math.cos(yaw));},lobbyMusicGain(distance,phase='Lobby'){if(phase!=='Lobby')return 0;const t=clamp((distance-35)/45,0,1);return .4*(1-t*t*(3-2*t));}};
 root.RescueRules=RescueRules;root.RoutePath=RoutePath;root.RescueItems={HEAVY,PRETTY};if(typeof module!=='undefined')module.exports={RescueRules,RoutePath,HEAVY,PRETTY};
 })(typeof window==='undefined'?globalThis:window);

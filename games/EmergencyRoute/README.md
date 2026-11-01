@@ -1,4 +1,4 @@
-# Emergency Route — single-player playtest 0.7
+# Emergency Route — single player 0.8
 
 Play at https://saman3d.com/games/EmergencyRoute/.
 
@@ -19,7 +19,7 @@ For the editable folder, run `node serve.cjs` and visit `http://127.0.0.1:4177/`
 | WASD / arrows | Walk, drive or fly / turn |
 | Shift | Run on foot; also ascend in helicopter |
 | Space | Jump / exit ambulance / ascend in helicopter |
-| C / Ctrl | Descend in helicopter |
+| C | Descend in helicopter |
 | Hold E | Pick up, load, enter, unload, hand over; exit helicopter after landing |
 | Hold R / F | Repair / organ care |
 | I / T / B | Inventory / tasks / drop equipment |
@@ -33,18 +33,18 @@ On phones, drag the left joystick farther to run faster. The large right-side up
 
 Collect the heart, kidney or lungs at Hospital A. The pickup prompt is available from the hospital spawn. Loading starts the viability reserve.
 
-The ambulance route contains ten events: tyre blowout, fallen tree, emergency gate, one early timed rockfall, flood stall, overheating, fuel leak, dead battery, brake failure and damaged bridge. The late rockfall is removed. Repairs retain all 53 physical targets. Equipment has a subtle glow and equips on pickup, including when the torch is on. One heavy item can be carried at a time. Daytime is selected with 75% probability, night with 25%. Running is 1.5 times the previous speed; water no longer returns the player to the ambulance. Distances use meters and speed uses km/h. Music fades away from the lobby. Night lighting is brighter and the HUD is smaller and more transparent.
+The ambulance route contains ten events: tyre blowout, fallen tree, emergency gate, one early timed rockfall, flood stall, overheating, fuel leak, dead battery, brake failure and damaged bridge. The late rockfall is removed. Repairs retain all 53 physical targets. Equipment has a subtle glow and equips on pickup, including when the torch is on. One heavy item can be carried at a time. Daytime is selected with 75% probability, night with 25%. Running is 1.5 times the previous speed; water no longer returns the player to the ambulance. Distances use meters and speed uses km/h. Music plays during loading/menu after browser audio permission and fades to silence outside the lobby. Night lighting is brighter and the HUD is smaller and more transparent.
 
 At Hospital B, drive into the glowing bay. The ambulance stops and locks; exit, collect the organ at the rear and carry it through the doors to reception.
 
-The helicopter uses the original air-ambulance model, animated rotors and source-based flight speeds. Fly through all twelve ordered rings, descend onto the glowing Hospital B helipad and stop. Landing locks the helicopter; exit, collect the organ and walk to reception. Neither vehicle can be driven away after parking or landing for delivery.
+The helicopter uses the original air-ambulance model, animated rotors and source-based flight speeds. Fly through all twelve ordered rings, descend onto the glowing Hospital B helipad and stop. Landing locks the helicopter; exit, collect the organ and walk to reception. Neither vehicle can be driven away after parking or landing for delivery. Both helipads have solid bases and access ramps.
 
 Organ care restores 5% viability with a 45-second cooldown. Failed deliveries can revive with 50% viability. A failure after parking preserves the final carry-and-deliver stage.
 
 ## Checks and remaining limits
 
-Browser checks cover ten ground events, 53 targets, 24 pickups, care and handover with zero game errors. Physics checks drive the full road and hospital approach, fly all twelve rings, land, and walk the organ into Hospital B from both arrival points. Touch joystick, pinch, jump, helicopter ascent/descent and holding actions are checked in the desktop browser. Actual fullscreen entry/exit, one-time naming and saved progress are checked there too.
+Browser checks cover ten ground events, 53 targets, 24 pickups, care and handover with zero game errors. Physics checks drive the full road and hospital approach, fly all twelve rings, land, and walk the organ into Hospital B from both arrival points. Touch joystick, pinch, jump, helicopter ascent/descent and holding actions are checked in the desktop browser. Modified-key combinations do not trigger game actions. Fullscreen keyboard capture is requested where supported; browser and operating-system shortcuts depend on the browser. Actual fullscreen entry/exit, one-time naming and saved progress are checked there too.
 
-Packed meshes retain every recovered LOD0 face and original UVs. The original kidney-container atlas is restored. Helicopter recovery includes 245 mesh assets; nineteen smaller mesh IDs remain unavailable, including some tail lettering, fittings, a lower-tail panel and nose grille. Some clothing and ambulance trim remain reconstructed. The authentic helicopter turbine loop is included; its separate rotor-spin recording remains unavailable.
+Packed meshes retain every recovered LOD0 face and original UVs. The original kidney-container atlas is restored. Helicopter recovery includes 245 mesh assets; nineteen smaller mesh IDs remain unavailable, including some tail lettering, fittings, a lower-tail panel and nose grille. Some clothing and ambulance trim remain reconstructed. The authentic helicopter turbine loop is included; its original rotor-spin recording is also included.
 
-Physical Android/iPhone/Safari performance and a complete human road/search playthrough remain to be tested. This friend playtest is not CrazyGames certified. See BUILD-MANIFEST.json for exact sizes, CREDITS.md for attribution and CRAZYGAMES-READINESS.md for the submission checklist.
+Physical Android/iPhone/Safari performance and a complete human road/search playthrough remain to be tested. CrazyGames certification is not claimed. See BUILD-MANIFEST.json for exact sizes, CREDITS.md for attribution and CRAZYGAMES-READINESS.md for the submission checklist.

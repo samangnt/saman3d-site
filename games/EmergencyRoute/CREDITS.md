@@ -2,7 +2,7 @@
 
 Original game/map/equipment/ambulance snapshots come from the user-provided Roblox place 89752458290049. Original geometry and textures were recovered read-only from owned-asset responses and the existing local cache. This conversion does not grant additional distribution rights.
 
-The ambulance livery contains its original creator notice. This build is the user-authorized single-player friend playtest. Rights remain with the original creators.
+The ambulance livery contains its original creator notice. This is the user-authorized single-player browser conversion. Rights remain with the original creators.
 
 The original 15 avatar joints and exact standing height were exported read-only. Coat/face texture detail and unavailable interior trim are reconstructed. Missing repair sound files are not represented as recovered originals.
 
@@ -29,7 +29,7 @@ Three.js r170: Copyright 2010–2024 Three.js Authors, MIT license (included bel
 - rbxasset://sounds/action_jump.mp3 (`rbxasset://sounds/action_jump.mp3`)
 - rbxasset://sounds/action_jump_land.mp3 (`rbxasset://sounds/action_jump_land.mp3`)
 - rbxasset://sounds/action_get_up.mp3 (`rbxasset://sounds/action_get_up.mp3`)
-- Original EC-135 air-ambulance model, 245 recovered mesh assets, source helipad/course and turbine loop (150485913). Nineteen additional helicopter mesh IDs and its separate rotor-spin recording remain unavailable.
+- Original EC-135 air-ambulance model, 245 recovered mesh assets, source helipad/course, turbine loop (150485913) and rotor-spin loop (7121392909). Nineteen additional helicopter mesh IDs remain unavailable.
 - Original kidney-container texture atlas136844318217813 recovered; existing heart/lung atlases retained.
 
 Asset identifiers and recordings are retained for provenance, not as a separate license grant.
