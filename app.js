@@ -192,7 +192,10 @@ if ('IntersectionObserver' in window) {
       }
     });
   }, {rootMargin:'-15% 0px -65% 0px',threshold:0});
-  ['work','game-dev','about','contact'].forEach(id => observer.observe(document.getElementById(id)));
+  ['work','about','contact'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) observer.observe(el);
+  });
 }
 
 // Discourage casual image saving without interfering with text or keyboard controls.
